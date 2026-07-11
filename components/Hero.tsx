@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MAIN_SITE_URL } from "@/lib/data";
 
 export default function Hero() {
   return (
@@ -19,7 +20,9 @@ export default function Hero() {
             graphic in the image. Percentage-based so it stays aligned at every
             screen size since the image container keeps a fixed aspect ratio. */}
         <Link
-          href="/sale"
+          href={`${MAIN_SITE_URL}/collections`}
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Shop before it's gone — EOFY Sale, flat 20% off storewide"
           className="group absolute rounded-sm outline-offset-4 transition-transform hover:scale-[1.03] focus-visible:scale-[1.03]"
           style={{
