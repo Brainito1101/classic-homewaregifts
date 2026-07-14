@@ -18,7 +18,7 @@ export const shopByCategory: Category[] = [
   { name: "Chef And Cook", slug: "chef-cook", image: "/image/Chef and cook.png" },
   { name: "Melamine", slug: "melamine", image: "/image/Melamine.png" },
   { name: "Salt & Pepper", slug: "salt-pepper", image: "/image/Salt and pepper.png" },
-  { name: "Crystal Decor", slug: "crystal-decor", image: "https://picsum.photos/seed/crystaldecor/200/200" },
+  { name: "Crystal Decor", slug: "crystal-decor", image: "/image/Crystal decor.jpg" },
   { name: "Sculpture & Statue", slug: "sculpture", image: "/image/Sculputure and statue.png" },
   { name: "Islamic Decor", slug: "islamic-decor", image: "/image/Islam Decor.png" },
   { name: "Home Storage", slug: "home-storage", image: "/image/Home storage.jpg" },
