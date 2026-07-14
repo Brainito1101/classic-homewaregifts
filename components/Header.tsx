@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { User, ShoppingCart, Menu, X, Search } from "lucide-react";
+import { User, Menu, X, Search } from "lucide-react";
 import AnnouncementBar from "./AnnouncementBar";
 import SearchBar from "./SearchBar";
 import NavMenu from "./NavMenu";
@@ -12,7 +12,7 @@ import { navLinks, MAIN_SITE_URL, ACCOUNT_URL } from "@/lib/data";
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSearch, setMobileSearch] = useState("");
-  const cartCount = 0;
+  
 
   const handleMobileSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -69,23 +69,7 @@ export default function Header() {
               </span>
             </Link>
 
-            <span className="hidden h-8 w-px bg-gray-200 sm:block" />
-
-            <Link
-              href="/cart"
-              aria-label={`Cart, ${cartCount} items`}
-              className="group relative flex items-center gap-2.5 text-gray-700"
-            >
-              <span className="relative flex h-9 w-9 items-center justify-center rounded-full text-gray-500 transition-colors group-hover:bg-brand-light group-hover:text-brand">
-                <ShoppingCart size={19} />
-                <span className="absolute -top-1.5 -right-1.5 flex h-[18px] w-[18px] min-w-[18px] items-center justify-center rounded-full bg-brand px-1 text-[10px] font-bold text-white shadow-sm">
-                  {cartCount}
-                </span>
-              </span>
-              <span className="hidden text-sm font-semibold text-ink transition-colors group-hover:text-brand sm:inline">
-                Cart
-              </span>
-            </Link>
+         
 
             <button
               aria-label="Toggle menu"
